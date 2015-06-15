@@ -43,7 +43,8 @@ class OverlayView:UIView {
         imageView.frame = CGRectMake(50, 50, 100, 100)
 
     }
-    func setImageView(buttonString: String) {
+    
+    func setUIImage(buttonString: String) {
         imageView.image = UIImage(named: buttonString)
     }
     
@@ -56,10 +57,10 @@ class OverlayView:UIView {
         
         switch (mode) {
         case .Left:
-            setImageView("noButton")
+            setUIImage("noButton")
             break;
         case .Right:
-            setImageView("yesButton")
+            setUIImage("yesButton")
             break;
         case .None:
             break;
